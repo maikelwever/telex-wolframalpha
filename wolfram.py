@@ -33,5 +33,5 @@ class WolframAlphaPlugin(plugin.TelexPlugin):
                 result_text = "\n".join("* {0}:\n    - {1}".format(i.title, "\n    - ".join(i.text.split("\n")))
                                         for i in res.pods if i.text)
 
-        result_text += "\nPowered by https://wolframalpha.com/input/?i=" + quote(question, safe='')
+        result_text += "\nPowered by http://wolframalpha.com/input/?i=" + quote(question, safe='')
         return result_text
