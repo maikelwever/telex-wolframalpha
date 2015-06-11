@@ -30,7 +30,7 @@ class WolframAlphaPlugin(plugin.TelexPlugin):
             if not len(res.pods):
                 result_text = "No results :("
             else:
-                result_text = "\n".join(i.text for i in res.pods)
+                result_text = "\n".join(i.text for i in res.pods if i.text)
 
         result_text += "\nPowered by https://wolframalpha.com/input/?i=" + quote(question, safe='')
         return result_text
