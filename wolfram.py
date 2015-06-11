@@ -22,7 +22,7 @@ class WolframAlphaPlugin(plugin.TelexPlugin):
 
     def wolfram(self, msg, matches):
         question = matches.group(1)
-        client = wolframalpha.Client(self.read_config('api_key'))
+        client = wolframalpha.Client(self.read_option('api_key'))
         res = client.query(question)
         result_text = "\n".join(next(res.results).text)
         result_text += "\nPowered by https://wolframalpha.com/input/?i=" + quote(question, safe='')
