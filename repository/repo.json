@@ -1,0 +1,9 @@
+{
+    "name": "WolframAlpha",
+    "description": "Answers questions using the WolframAlpha API",
+    "version": "1.0",
+    "default_enable": ["WolframAlpha"],
+    "homepage": "https://github.com/maikelwever/telex-wolframalpha",
+    "repo": "https://github.com/maikelwever/telex-wolframalpha.git",
+    "branch": "master"
+}

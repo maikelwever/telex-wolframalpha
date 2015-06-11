@@ -1,0 +1,9 @@
+[Core]
+Name = WolframAlpha
+Module = wolfram
+
+[Documentation]
+Author = Maikel Wever
+Version = 1.0
+Website = https://github.com/maikelwever/telex-wolframalpha
+Description = Answers questions using the WolframAlpha API
